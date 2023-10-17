@@ -21,7 +21,7 @@
         </button>
         <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#tp1">TP n°1</a></li>
-            <li><a class="dropdown-item" href="#">empty</a></li>
+            <li><a class="dropdown-item" href="#tpdate">TP DATE</a></li>
             <li><a class="dropdown-item" href="#">empty</a></li>
         </ul>
         </div>
@@ -35,6 +35,12 @@
             <li><a href="TP1/exo1.php" target=_blank>Exercice 1 : Déclaration et Affichage de variables</a></li>
             <li><a href="TP1/exo2.php" target=_blank>Exercice 2 : Opération sur les Variables</a></li>
             <li><a href="TP1/exo3.php" target=_blank>Exercice 3 : Concaténation de Chaînes</a></li>
+        </ol>
+		<h2 id="tpdate">TP sur les dates n°1</h2>
+
+        <ol>
+            <li><a href="TP_DATE/tp_php_date.php" target=_blank>TP Date 1</a></li>
+			<li><a href="TP_DATE/tp_php_date2.php" target=_blank>TP Date 2</a></li>
         </ol>
 </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> 
