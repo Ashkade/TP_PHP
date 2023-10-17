@@ -17,14 +17,18 @@
     <?php
 
         $a=2;
+        echo 'Soit la variable a égale à '.$a;
         $b=3;
-        echo $a+$b;
         echo '<br>';
-        echo $a-$b;
+        echo 'Soit la variable b égale à '.$b;
         echo '<br>';
-        echo $a*$b;
+        echo 'a+b='.$a+$b;
         echo '<br>';
-        echo $a/$b;
+        echo 'a-b='.$a-$b;
+        echo '<br>';
+        echo 'a*b='.$a*$b;
+        echo '<br>';
+        echo 'a/b='.$a/$b;
     
 
     ?>
