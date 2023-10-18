@@ -13,7 +13,7 @@
     Affichez la date actuelle au format "AAAA-MM-JJ HH:MM:SS".
     <br>
     <?php
-    echo date('Y-m-d');
+    echo date('Y-m-d H:i:s');
     echo '<br>';
     ?>
     <br>
@@ -25,6 +25,9 @@
     setlocale(LC_TIME, 'French');
     echo strftime("%A");
     echo "<br>";
+
+    $actu = date('D');
+    echo $actu;
     ?>
     <br>
     TP 3: Calculer l'Âge <br><br>

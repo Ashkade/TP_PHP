@@ -32,6 +32,7 @@ $anneeDeNaissance = 1984;
 $ageCalcule = strftime('%Y')-$anneeDeNaissance;
 echo "J'ai ".$ageCalcule.' ans';
 
+
 ?>
 
 </body>
