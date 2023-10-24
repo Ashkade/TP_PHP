@@ -11,7 +11,7 @@
 
     <?php
         include_once('../Header/header_tp.php');
-        include_once('Main/main_exo2.php');
+        include_once('Main/main_tab_2.php');
         include_once('../Footer/footer.php');
     ?>
 

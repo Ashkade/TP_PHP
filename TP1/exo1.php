@@ -3,30 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exo1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="../style/style.css" rel="stylesheet">
+    <title>Exercice 1</title>
 </head>
 <body>
 
-    <!-- Exercice 1: Déclaration et Affichage de Variables
-    Déclarez une variable $nom avec votre nom et affichez-la.
-    Déclarez une variable $age avec votre âge et affichez-la.
-    Déclarez une variable $ville avec le nom de votre ville et affichez-la. -->
-
-    
     <?php
-
-    $nom='BETARI Laïd';
-    echo $nom;
-    echo '<br>';
-    $age=39;
-    echo $age;
-    echo '<br>';
-    $ville='Lamotte-Beuvron';
-    echo $ville;
-
-
-
+        include_once('../Header/header_tp.php');
+        include_once('Main/main_exo1.php');
+        include_once('../Footer/footer.php');
     ?>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> 
 </body>
 </html>

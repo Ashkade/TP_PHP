@@ -3,37 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">
-    <title>TP PHP Date 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="../style/style.css" rel="stylesheet">
+    <title>Exercice 2</title>
 </head>
 <body>
-<br>    
-Exercice 1 : Création et Affichage de Variables <br><br>
-Créez une variable appelée $nom et attribuez-lui votre nom <br>
-Créez une variable appelée $age et attribuez-lui votre âge. <br>
-Affichez ces variables en utilisant echo. <br>
 
-<?php
+    <?php
+        include_once('../Header/header_tp.php');
+        include_once('Main/main_date2.php');
+        include_once('../Footer/footer.php');
+    ?>
 
-    $nom = 'Laïd BETARI';
-    $age = '39 ans';
-    echo 'Je m\'appelle '.$nom.' et mon âge est '.$age;
-?>
-
-<br><br><br>
-Exercice 2 :   Opérations sur les variables <br><br>
-Créez une variable $anneeDeNaissance et attribuez-lui l'année de naissance. <br>
-Calculez votre âge en soustrayant $anneeDeNaissance de l'année actuelle et stockez le résultat dans une nouvelle variable $ageCalcule. <br>
-Affichez la phrase "J'ai X ans." en utilisant la variable $ageCalcule. <br>
-
-<?php
-
-$anneeDeNaissance = 1984;
-$ageCalcule = strftime('%Y')-$anneeDeNaissance;
-echo "J'ai ".$ageCalcule.' ans';
-
-
-?>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> 
 </body>
 </html>
