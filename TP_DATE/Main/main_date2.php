@@ -1,3 +1,4 @@
+<div class="content">
 <br>    
 Exercice 1 : Création et Affichage de Variables <br><br>
 Créez une variable appelée $nom et attribuez-lui votre nom <br>
@@ -25,3 +26,4 @@ echo "J'ai ".$ageCalcule.' ans';
 
 
 ?>
+</div>

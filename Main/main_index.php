@@ -1,4 +1,5 @@
-<main>
+<main class="content">
+
     <h2 id="tp1">TP sur les variables n°1</h2>
 
         <ol>
@@ -17,7 +18,9 @@
         <h2 id="tptab">TP sur les tables</h2>
 
         <ol>
-            <li><a href="TP_TAB_PHP/tp_tab_1.php" >TP Table 1</a></li>
-			<li><a href="TP_TAB_PHP/tp_tab_2.php" >TP Table 2</a></li>
+            <li><a href="TP_TAB_PHP/tp_tab_1.php" >TP Table 1 Exercice 1</a></li>
+			<li><a href="TP_TAB_PHP/tp_tab_2.php" >TP Table 1 Exercice 2</a></li>
+			<li><a href="TP_TAB_PHP_2/tp_php_tab_2.php" >TP Table 2</a></li>
         </ol>
+    
 </main>

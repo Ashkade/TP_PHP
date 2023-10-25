@@ -1,3 +1,4 @@
+<div class="copntent">
 TP 1: Afficher la Date Actuelle <br><br>
 Affichez la date actuelle au format "AAAA-MM-JJ HH:MM:SS".
 <br>
@@ -48,3 +49,4 @@ echo $dateAF;
 
 
 ?>
+</div>

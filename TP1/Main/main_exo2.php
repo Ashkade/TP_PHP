@@ -1,3 +1,4 @@
+ <div class="content">
  <!-- Exercice 2: Opérations sur les Variables
     Créez deux variables $a et $b avec des valeurs numériques.
     Additionnez-les et affichez le résultat.
@@ -22,4 +23,4 @@
         echo 'a/b='.$a/$b;
     
 
-    ?>
+    ?></div>

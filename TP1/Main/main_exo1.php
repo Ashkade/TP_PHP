@@ -1,3 +1,4 @@
+<div class="content">
 <!-- Exercice 1: Déclaration et Affichage de Variables
     Déclarez une variable $nom avec votre nom et affichez-la.
     Déclarez une variable $age avec votre âge et affichez-la.
@@ -18,3 +19,4 @@
 
 
     ?>
+    </div>

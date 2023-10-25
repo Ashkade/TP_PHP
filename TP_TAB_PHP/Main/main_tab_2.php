@@ -1,3 +1,4 @@
+<div class="content">
 <?php
 
         echo "<h1>Exo2 Manipulation de Tableau</h1><br><br>";
@@ -18,7 +19,7 @@
                     echo $etudiant." a la note suivante ".$note.'<br>';
                 }
 
-            echo '<br><br>---------------------------------------<br>';
+            echo '<br><br>---------------------------------------<br><br>';
 
             echo "<li>Affichez la note de l'étudiant 'Alice'.Modifiez la note de 'Bob' à 17.</li><br>";
 
@@ -54,3 +55,4 @@
         echo "</ul>";
 
     ?>
+    </div>

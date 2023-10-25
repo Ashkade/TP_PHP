@@ -1,3 +1,4 @@
+<div class="content">
 <?php   
         echo "<h1>Exo1: Création et Accès aux Tableaux</h1><br><br>";
         
@@ -37,3 +38,4 @@
     
         echo "</ul>";
     ?>
+    </div>
