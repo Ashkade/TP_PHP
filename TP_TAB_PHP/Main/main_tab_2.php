@@ -44,7 +44,11 @@
                     $cumul=$cumul+$note;
                 }
                 $moyenne=$cumul/count($notes);
-                echo $moyenne;
+                echo $moyenne."<br>";
+
+                //alternative
+                $total = array_sum($notes);
+                echo "La moyenne est ".($total/count($notes))."<br>";
                 
     
         echo "</ul>";
