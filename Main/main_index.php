@@ -22,5 +22,11 @@
 			<li><a href="TP_TAB_PHP/tp_tab_2.php" >TP Table 1 Exercice 2</a></li>
 			<li><a href="TP_TAB_PHP_2/tp_php_tab_2.php" >TP Table 2</a></li>
         </ol>
+
+        <h2 id="tpn2">TP n°2</h2>
+
+        <ol>
+            <li><a href="TP_PHP_N2/TP_PHP_N2.php" >TP n°2</a></li>
+        </ol>
     
 </main>

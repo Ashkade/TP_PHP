@@ -13,6 +13,7 @@
             <li><a class="dropdown-item" href="../index.php#tp1">TP n°1</a></li>
             <li><a class="dropdown-item" href="../index.php#tpdate">TP DATE</a></li>
             <li><a class="dropdown-item" href="../index.php#tptab">TP Table</a></li>
+            <li><a class="dropdown-item" href="../index.php#tpn2">TP n°2</a></li>
         </ul>
         </div>
   </div>
