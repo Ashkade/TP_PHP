@@ -28,5 +28,11 @@
         <ol>
             <li><a href="TP_PHP_N2/TP_PHP_N2.php" >TP n°2</a></li>
         </ol>
+        
+        <h2 id="tpn3">TP n°2</h2>
+
+        <ol>
+            <li><a href="TP_PHP_3/tp_php_3.php" >TP n°3</a></li>
+        </ol>
     
 </main>
