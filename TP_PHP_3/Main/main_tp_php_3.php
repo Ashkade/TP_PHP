@@ -20,6 +20,16 @@
         else
             echo "Ce n'est pas un multiple de 5.<br>";
 
+        switch($multiple){
+            case $multiple%3!==0 :
+                echo "$multiple n'est pas un multiple de 3";
+                break;
+            case $multiple%5!==0 :
+                echo "$multiple n'est pas un multiple de 5";
+                break;
+            default :
+                echo "$multiple est un multiple de 3 et de 5";
+        }
         echo '<br><br>---------------------------------------<br><br>';
 
         echo "<h2>Exercice 2</h2>";
@@ -43,11 +53,11 @@
         echo "<p>Effectuez une suite de tirages de nombres aléatoires jusqu’à obtenir une suite composée
         d’un nombre pair suivi de deux nombres impairs.</p>";
 
-        $nbr1 = rand(1,100);
-        $nbr2 = rand(1,100);
-        $nbr3 = rand(1,100);
+         $nbr1 = rand(1,100);
+         $nbr2 = rand(1,100);
+         $nbr3 = rand(1,100);
 
-        while($nbr1%2==0&&$nbr2%2!=0&&$nbr3%2!=0){
+        while($nbr1%2!==0 || $nbr2%2==0 || $nbr3%2==0){
             $nbr1 = rand(1,100);
             $nbr2 = rand(1,100);
             $nbr3 = rand(1,100);
@@ -86,7 +96,7 @@
 
         $nbrchoise = 515;
         $nbrrand = rand(100,999);
-        $compteur=0;
+        $compteur=1;
         while($nbrchoise!=$nbrrand){
             $nbrrand = rand(100,999);
             $compteur++;
@@ -95,7 +105,7 @@
 
         $nbrchoise=426;
         
-        for($compteur=0;$nbrchoise!=$nbrrand;$compteur++){
+        for($compteur=1;$nbrchoise!=$nbrrand;$compteur++){
             $nbrrand = rand(100,999);
         }
         echo "Le nombre de tirage nécessaire pour obtenir le nombre $nbrchoise est le suivant : $compteur, avec la boucle for.";
@@ -117,7 +127,7 @@
         }
         
         echo "<br>";
-        
+        $alphabet="ABCDEFGHIJKLMNOPQRSTUVWXYZ";        
         echo "La suite de caractères renseignés est la suivante pour \$table2 : ";
         for($i=11;$i<=36;$i++){
             $table2[$i]=substr($alphabet,$i-11,1);
