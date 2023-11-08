@@ -24,6 +24,7 @@
         echo '2. ';
 
         $ville = "SELECT Nom, Ville FROM personne WHERE Ville = 'Paris' OR Ville = 'Bordeaux' ORDER BY Nom ASC";
+        $ville2 = "SELECT Nom, Ville FROM personne WHERE Ville IN('Paris','Bordeaux') ORDER BY Nom ASC";
 
         if($request1 = mysqli_query($conx, $ville)){
             echo "<table width=500>";
@@ -47,6 +48,9 @@
         echo '3. ';
 
         $age = "SELECT Nom, Age FROM personne WHERE Age>=25 AND Age<=40 ORDER BY Nom ASC";
+
+        // Alternative
+        $age2 = "SELECT Nom, Age FROM personne WHERE Age BETWEEN 25 AND 40 ORDER BY Nom ASC";
 
         if($request2 = mysqli_query($conx, $age)){
             echo "<table width=500>";
