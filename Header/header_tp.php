@@ -15,6 +15,7 @@
             <li><a class="dropdown-item" href="../index.php#tptab">TP Table</a></li>
             <li><a class="dropdown-item" href="../index.php#tpn2">TP n°2</a></li>
             <li><a class="dropdown-item" href="../index.php#tpn3">TP n°3</a></li>
+            <li><a class="dropdown-item" href="../index.php#dist">Distanciel</a></li>
         </ul>
         </div>
   </div>
