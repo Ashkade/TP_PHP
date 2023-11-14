@@ -195,8 +195,6 @@
 
         // expression régulière
 
-        $model9 = "/\n/";
-        $nouveau9 = "/<br>/";
         echo preg_replace("/\n/", "<br>",$string9);
 
     ?>
