@@ -2,7 +2,7 @@
 
     <?php
 
-        echo "<h2>Exercice 1</h2>";
+        echo "<h2 class=\"moncul\">Exercice 1</h2>";
         
         echo "<p>Transformez une chaîne écrite dans des casses différentes afin que chaque mot ait une initiale en majuscule.</p>";
 
@@ -47,7 +47,7 @@
         echo sprintf ("%'_-20s %'_-20s",$firstname3,$lastname3)."<br>";
         echo sprintf ("%'_-20s %'_-20s",$firstname4,$lastname4);
 
-        // dans ce cas pour sprintf ("format désiré - %=>revoit à l'argument suivant // '=>justifié à gauche //  _=>charactère de remplissage // -20s=> formatage dans un champs de 20charactères",argument ou variable à formater) 
+        // dans ce cas pour sprintf ("format désiré - %=>revoit à l'argument suivant // '=>justifié à gauche //  _=>charactère de remplissage // -20s=> formatage dans un champs de 20 charactères alignés à gauche",argument ou variable à formater) 
 
         echo '<br><br>---------------------------------------<br><br>';
         
@@ -130,6 +130,24 @@
         validurl1($strurl4);
         validurl2($strurl4);
 
+        #correction
+
+        function validhttp($vald){
+            $modele = "/^(www)\.([a-z0-9]+)(\.|=)?([a-z0-9]*)\.([a-z]{2-4}$)/";
+            $vald=strtolower($vald);
+            if(preg_match($modele,$vald)){
+                echo "$vald est valide <br>";
+                return TRUE;
+            }else{
+                echo "$vald est invalide <br>";
+                return FALSE;
+            }
+        }
+
+        validhttp($strurl1);
+        validhttp($strurl2);
+        validhttp($strurl3);
+        validhttp($strurl4);
 
         echo '<br><br>---------------------------------------<br><br>';
         
@@ -138,7 +156,7 @@
         echo "<p>Créez une expression régulière pour valider un âge inférieur à 100 ans.</p>";
 
         function agetest($age){
-            $pattern="/^[1-9][0-9]?$|100$/";
+            $pattern="/^[1-9][0-9]?$/";
             if(preg_match($pattern,$age)==true)
                 echo "L'age renseigné $age est un age valide.<br>";
             else
@@ -167,13 +185,20 @@
 
         echo"<br><br>";
 
-        // expression régulière
-
         $target9= "\n";
         $replacement="<br>";
         $newstring9 = str_replace($target9,$replacement,$string9);
 
         echo $newstring9;
+
+        echo"<br><br>";
+
+        // expression régulière
+
+        $model9 = "/\n/";
+        $nouveau9 = "/<br>/";
+        echo preg_replace("/\n/", "<br>",$string9);
+
     ?>
 
 </div>
