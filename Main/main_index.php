@@ -40,5 +40,11 @@
         <ol>
             <li><a href="distanciel/distanciel_20231110.php" >Distanciel du 10 Novembre 2023</a></li>
         </ol>
+        
+        <h2 id="tpn5">TP n°5</h2>
+
+        <ol>
+            <li><a href="TP_PHP_5/TP_PHP_5.php" >TP n°5</a></li>
+        </ol>
     
 </main>
