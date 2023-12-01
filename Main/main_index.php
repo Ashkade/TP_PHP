@@ -39,6 +39,7 @@
 
         <ol>
             <li><a href="distanciel/distanciel_20231110.php" >Distanciel du 10 Novembre 2023</a></li>
+            <li><a href="distanciel/distanciel_20231201.php" >Distanciel du 01 Décembre 2023</a></li>
         </ol>
         
         <h2 id="tpn5">TP n°5</h2>
