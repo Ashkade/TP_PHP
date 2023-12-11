@@ -47,5 +47,11 @@
         <ol>
             <li><a href="TP_PHP_5/TP_PHP_5.php" >TP n°5</a></li>
         </ol>
-    
+
+        <h2 id="tps">TP n°5</h2>
+
+        <ol>
+            <li><a href="TP_SESSION/tp_session.php" >TP Session</a></li>
+        </ol>
+        
 </main>
