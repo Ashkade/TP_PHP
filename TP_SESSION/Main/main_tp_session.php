@@ -31,8 +31,10 @@
             $error = "Wrong login or password";
         }
     }
+    @$_SESSION['name'] = $row[0];   
 
     mysqli_close($con);
+    
 ?>
 
 <!DOCTYPE html>
