@@ -3,8 +3,8 @@
 
     <?php
     session_start();
-    @$login = $_POST['login'];
-    @$password = $_POST['pwd'];
+    @$login = htmlspecialchars(strtolower($_POST['login']));
+    @$password = htmlspecialchars($_POST['pwd']);
     @$validate = $_POST['valid'];
     $error = "";
 
@@ -19,12 +19,16 @@
         return $connexion;
     }
     $con = connectDb();
-
+	
     $dblogin = "SELECT user, password_ FROM member WHERE user LIKE '$login'";
     $result = mysqli_query($con,$dblogin) or die("Échec de la récupération du mot de passe");
     $row = mysqli_fetch_row($result);
-    if(isset($validate)){
-        if($login == $row[0] && MD5($password) == $row[1]){
+    
+	if(isset($validate)){
+		if($login == "" || $password == ""){
+			$error = "Veuillez renseigner tout les champs";
+		}
+        elseif($login == $row[0] && MD5($password) == $row[1]){
             $_SESSION["Se connecter"]="Yes";
             header("location:tp_session_membre.php");
         }else{

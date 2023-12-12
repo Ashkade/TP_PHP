@@ -65,7 +65,7 @@ if(
     $con = connectDb();
 
     //Création des variables pour récupérer les données de mes champs du formulaire
-    @$login_ = htmlspecialchars($_POST['createUser']);
+    @$login_ = htmlspecialchars(strtolower($_POST['createUser']));
     @$password_ = MD5(htmlspecialchars($_POST['createPwd']));
     @$password2_ = MD5(htmlspecialchars($_POST['createPwd2']));
 
