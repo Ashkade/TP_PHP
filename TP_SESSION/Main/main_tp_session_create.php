@@ -9,8 +9,14 @@
     <div class="label">Entrez votre mot de passe</div>
     <input type="password" name="createPwd" value="">
     <br>
+    
+    <div class="label">Confirmer votre mot de passe</div>
+    <input type="password" name="createPwd2" value="">
+    <br>
 
     <input type="submit" name="createLogin" value="Valider">
+
+    <button><a href="tp_session.php">Retour</a></button>
 
     </form>
 
@@ -50,9 +56,10 @@ function checkUser($login_, $db){
 //A la fin je vérifie que les cléescreatePwd et createPwd ne sont pas vide.
 if(
     isset($_POST) &&
-    isset($_POST['createUser'], $_POST['createPwd']) && 
+    isset($_POST['createUser'], $_POST['createPwd'], $_POST['createPwd2']) &&
     trim($_POST['createUser']) !== "" && 
-    trim($_POST['createPwd']) !== "")
+    trim($_POST['createPwd']) !== "" &&
+    trim($_POST['createPwd2']) !== "")
     {
     //J'appel ma fonction pour me connecter à la BDD
     $con = connectDb();
@@ -60,10 +67,13 @@ if(
     //Création des variables pour récupérer les données de mes champs du formulaire
     @$login_ = htmlspecialchars($_POST['createUser']);
     @$password_ = MD5(htmlspecialchars($_POST['createPwd']));
+    @$password2_ = MD5(htmlspecialchars($_POST['createPwd2']));
 
     //J'ajoute la vérification de l'user avant insertion (je ne veux pas de doublons d'emails)
     if(checkUser($login_, $con)){
         echo "Ce nom d'utilisateur existe déjà";
+    }elseif($password_!==$password2_){
+        echo "Vous n'avez pas renseigné 2 mots de passe identiques";
     }else{
         //Je créé ma reqête d'insertion SQL
         $sql_ = "INSERT INTO member (id, user, password_) VALUES ('', '$login_', '$password_')";
